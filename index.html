@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimsum by Ahmad</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&display=swap" rel="stylesheet">
+    <link href="./dist/output.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Header start  -->
+    <header class="bg-transparent absolute top-0 left-0 w-full flex
+     items-center z-10">
+        <div class="container">
+            <div class="flex items-center justify-between relative">
+                <div class="px-4">
+                    <a href="#home" class="font-bold text-lg text-primary block py-6 lg:text-2xl">
+                        Dimsum By Ahmad
+                    </a>
+                </div>
+                <div class="flex items-center px-4">
+                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                    </button>
+
+                    <nav id="nav-menu"
+                        class="hidden absolute py-5 bg-white
+                    shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                        <ul class="block lg:flex">
+                            <li class="group">
+                                <a href="#home" class="text-base text-dark py-2 mx-8 flex
+                                group-hover:text-primary">Beranda</a>
+                            </li>
+                            <li class="group">
+                                <a href="#menu" class="text-base text-dark py-2 mx-8 flex
+                                group-hover:text-primary">Menu</a>
+                            </li>
+                            <li class="group">
+                                <a href="#tentang kami" class="text-base text-dark py-2 mx-8 flex
+                                group-hover:text-primary">Tentang Kami</a>
+                            </li>
+                            <li class="group">
+                                <a href="#testimoni" class="text-base text-dark py-2 mx-8 flex
+                                group-hover:text-primary">Testimoni</a>
+                            </li>
+                            <li class="group">
+                                <a href="#kontak" class="text-base text-dark py-2 mx-8 flex
+                                group-hover:text-primary">Kontak</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end  -->
+    <!-- Hero Section Start -->
+    <section id="home"
+        class="pt-24 min-h-screen flex items-center bg-gradient-to-r from-yellow-100 to-yellow-50 text-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap items-center">
+                <div class="w-full self-center lg:w-1/2 text-center lg:text-left">
+                    <p class="text-lg font-semibold text-yellow-600 mb-2"> Dimsum by Ahmad
+                    </p>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-orange-900 mb-4">
+                        Gurihnya Dimsum Ayam: Pasti Bikin Balik Lagi.
+                    </h1>
+                    <p class="font-medium text-gray-800 mb-10 leading-relaxed max-w-xl mx-auto lg:mx-0">
+                        Dibuat dari daging ayam segar pilihan dan bumbu yang pas, siap jadi hidangan favorit keluarga
+                        Anda.
+                    </p>
+                    <a href="https://wa.me/6281249344162" class="text-base font-semibold text-white bg-yellow-500 py-3 px-8 rounded-full
+                        hover:shadow-lg hover:bg-yellow-600 transition duration-300 ease-in-out">
+                        Pesan Sekarang
+                    </a>
+                </div>
+                <div class="w-full self-end px-4 lg:w-1/2">
+                    <div class="relative mt-10 lg:mt-9 lg:right-0 flex justify-center">
+                        <img src="dist/img/Foto Home Dimsum.png" alt="Dimsum by Ahmad"
+                            class="max-w-full mx-auto lg:max-w-[80%]">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End  -->
+    <!-- menu start  -->
+    <section id="menu" class="py-16 bg-yellow-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-yellow-900 mb-10">Menu Kami</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <div class="relative bg-yellow-200 rounded-2xl shadow-md text-center hover:scale-105 transition duration-300
+                            pt-24 md:pt-40 lg:pt-32 pb-6 px-4">
+                    <div class="absolute -top-16 md:-top-20 lg:-top-32 left-1/2 transform -translate-x-1/2 
+                                w-40 h-40 md:w-56 md:h-56 lg:w-64 lg:h-64 z-10">
+                        <img src="dist/img/dimsum.png" alt="Dimsum Original" class="w-full h-full object-cover mx-auto">
+                    </div>
+
+                    <h3 class="text-xl md:text-2xl font-bold text-yellow-900 mb-1 mt-4">Dimsum Original</h3>
+                    <p class="text-md md:text-xl font-semibold text-yellow-900 mb-1">Isi 6</p>
+                    <p class="text-sm md:text-md text-yellow-800 mb-3 px-2">Saos pedas manis.</p>
+                    <p class="text-xl md:text-2xl font-bold text-yellow-900 mb-4">Rp14.000</p>
+                    <a href="https://wa.me/6281249344162"
+                        class="bg-primary text-white text-sm md:text-base font-semibold px-5 py-2.5 rounded-full hover:bg-yellow-600 transition duration-300 transform hover:scale-105">
+                        Order Sekarang
+                    </a>
+                </div>
+
+                <div class="relative bg-yellow-200 rounded-2xl shadow-md text-center hover:scale-105 transition duration-300
+                            pt-24 md:pt-40 lg:pt-32 pb-6 px-4">
+                    <div class="absolute -top-16 md:-top-20 lg:-top-32 left-1/2 transform -translate-x-1/2 
+                                w-40 h-40 md:w-56 md:h-56 lg:w-64 lg:h-64  z-10">
+                        <img src="dist/img/dimsum.png" alt="Dimsum Mentai" class="w-full h-full object-cover mx-auto">
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold text-yellow-900 mb-1 mt-4">Dimsum Mentai</h3>
+                    <p class="text-md md:text-xl font-semibold text-yellow-900 mb-1">Isi 6</p>
+                    <p class="text-sm md:text-md text-yellow-800 mb-3 px-2">Saos mentai tidak pedas atau mentai ekstra
+                        pedas</p>
+                    <p class="text-xl md:text-2xl font-bold text-yellow-900 mb-4">Rp16.000</p>
+                    <a href="https://wa.me/6281249344162"
+                        class="bg-primary text-white text-sm md:text-base font-semibold px-5 py-2.5 rounded-full hover:bg-yellow-800 transition duration-300 transform hover:scale-105">
+                        Order Sekarang
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- menu end  -->
+
+
+
+    <!-- best seller  -->
+    <section id="best-seller" class="py-20 bg-primary">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center gap-10">
+
+                <!-- Kiri-->
+                <div class="lg:w-1/2">
+                    <img src="dist/img/dimsum.png" alt="Dimsum Mentai"
+                        class="w-[300px] md:w-[350px] lg:w-[400px] mx-auto drop-shadow-2xl hover:scale-105 transition duration-500" />
+                </div>
+                <!-- Kanan-->
+                <div class="lg:w-1/2 text-center lg:text-left">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Our Best Seller</h2>
+                    <p class="text-white text-lg leading-relaxed mb-6">
+                        Dimsum Mentai kami adalah pilihan favorit para pelanggan!
+                        Dibuat dari bahan berkualitas, disajikan dengan saus mentai spesial yang gurih dan nikmat.
+                    </p>
+                    <p class="text-white
+                     font-bold text-2xl mb-6">Rp16.000 / Isi 6 pcs</p>
+                    <a href="https://wa.me/6281249344162"
+                        class="inline-block bg-yellow-100 text-primary font-semibold px-6 py-3 rounded-full shadow hover:bg-yellow-900 hover:text-white transition">
+                        Order Sekarang
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- best seller end  -->
+
+
+    <!-- tentang kami Section Start -->
+    <section id="tentang kami" class="pt-36 pb-32">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full px-4 mb-10 lg:w-1/2">
+                    <h4 class="font-bold uppercase text-primary text-lg mb-3">Tentang Kami</h4>
+                    <h2 class="font-bold text-dark text-3xl mb-5 max-w-md lg:text-3xl">Dimsum By Ahmad</h2>
+                    <p class="font-medium text-base text-Yellow-500 max-w-xl lg:text-lg">
+                        "Berawal dari kecintaan akan hidangan dimsum otentik, Dimsum By Ahmad didirikan sejak tahun 2024
+                        dengan satu misi sederhana: menyajikan dimsum ayam berkualitas tinggi yang lezat dan bisa
+                        dinikmati siapa saja. Kami percaya bahwa kelezatan sejati datang dari bahan-bahan pilihan dan
+                        proses pembuatan yang cermat.
+                        Setiap butir dimsum ayam kami diolah secara higienis menggunakan daging ayam segar premium dan
+                        bumbu rahasia keluarga yang telah teruji. Kami berkomitmen untuk mempertahankan cita rasa asli
+                        dimsum, sehingga setiap gigitan membawa Anda pada pengalaman kuliner yang autentik dan
+                        memuaskan. Dari dapur kami, untuk meja makan Anda, kami sajikan dimsum dengan sepenuh hati."
+                    </p>
+                </div>
+                <div class="w-full px-4 lg:w-1/2">
+                    <h3 class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10">Ikuti Kami</h3>
+                    <p class="font-medium text-base text-Yellow-500 mb-6 lg:text-lg"> Kepuasan pelanggan adalah
+                        prioritas
+                        utama. Kami selalu berusaha menghadirkan produk dimsum ayam terbaik dengan kualitas dan rasa
+                        yang konsisten.
+                        Kami senang bisa berbagi perjalanan kelezatan ini bersama Anda! Untuk mendapatkan update terbaru
+                        tentang menu baru, promo menarik, atau sekadar melihat di balik layar proses pembuatan dimsum
+                        kami, jangan lupa ikuti kami di media sosial</p>
+                    <div class="flex items-center">
+                        <!-- Instagram -->
+                        <a href="https://instagram.com/dimsumbyahmad" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-Yellow-300
+                         hover:border-primary hover:bg-primary hover:text-white">
+                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <title>Instagram</title>
+                                <path
+                                    d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077" />
+                            </svg>
+                        </a>
+                        <!-- WhatsApp -->
+                        <a href="https://wa.me/085649290574" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-Yellow-300
+                         hover:border-primary hover:bg-primary hover:text-white">
+                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <title>WhatsApp</title>
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- About Section End  -->
+
+    <!-- testimoni start  -->
+    <section id="testimoni" class="bg-primary py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-white text-center mb-10">Apa Kata Mereka?</h2>
+
+            <div class="relative overflow-hidden">
+                <div id="testimonial-slider" class="flex transition-transform duration-500 ease-in-out">
+
+                    <!-- Slide 1 -->
+                    <div class="w-full lg:w-1/3 flex-shrink-0 px-2">
+                        <div class="bg-yellow-100 rounded-lg p-6 text-center shadow-md h-full">
+                            <p class="text-lg italic mb-4">“Enak banget, dagingnya ayamnya kerasa banget dan saos
+                                mentainya enakk banget”</p>
+                            <h5 class="font-bold">– Nana</h5>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="w-full lg:w-1/3 flex-shrink-0 px-2">
+                        <div class="bg-yellow-100 rounded-lg p-6 text-center shadow-md h-full">
+                            <p class="text-lg italic mb-4">“Makin enakk dan nagih, bakalan sering order sih”</p>
+                            <h5 class="font-bold">– Arda</h5>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="w-full lg:w-1/3 flex-shrink-0 px-2">
+                        <div class="bg-yellow-100 rounded-lg p-6 text-center shadow-md h-full">
+                            <p class="text-lg italic mb-4">“ENAKKK BANGETT, mau pesen lagi"
+                            </p>
+                            <h5 class="font-bold">– Okta</h5>
+                        </div>
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="w-full lg:w-1/3 flex-shrink-0 px-2">
+                        <div class="bg-yellow-100 rounded-lg p-6 text-center shadow-md h-full">
+                            <p class="text-lg italic mb-4">“Mentainya banyak, dimusmnya ga asin, jadi menyatu sama
+                                mentainya love lovvv"
+                            </p>
+                            <h5 class="font-bold">– Zuwina</h5>
+                        </div>
+                    </div>
+                    <!-- Slide 5 -->
+                    <div class="w-full lg:w-1/3 flex-shrink-0 px-2">
+                        <div class="bg-yellow-100 rounded-lg p-6 text-center shadow-md h-full">
+                            <p class="text-lg italic mb-4">“Saos mentainya enak banget, mau order lagi"
+                            </p>
+                            <h5 class="font-bold">– Nadia</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="flex justify-center mt-6 gap-4">
+                <button onclick="moveSlide(-1)"
+                    class="bg-white hover:bg-yellow-300 text-yellow-800 font-bold py-2 px-4 rounded-full shadow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <g fill="none" fill-rule="evenodd">
+                            <path
+                                d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
+                            <path fill="currentColor"
+                                d="M7.94 13.06a1.5 1.5 0 0 1 0-2.12l5.656-5.658a1.5 1.5 0 1 1 2.121 2.122L11.122 12l4.596 4.596a1.5 1.5 0 1 1-2.12 2.122l-5.66-5.658Z" />
+                        </g>
+                    </svg>
+                </button>
+                <button onclick="moveSlide(1)"
+                    class="bg-white hover:bg-yellow-300 text-yellow-800 font-bold py-2 px-4 rounded-full shadow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <g fill="none" fill-rule="evenodd">
+                            <path
+                                d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
+                            <path fill="currentColor"
+                                d="M16.06 10.94a1.5 1.5 0 0 1 0 2.12l-5.656 5.658a1.5 1.5 0 1 1-2.121-2.122L12.879 12L8.283 7.404a1.5 1.5 0 0 1 2.12-2.122l5.658 5.657Z" />
+                        </g>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- testimoni end  -->
+    <!-- footer  -->
+    <section>
+        <footer class="bg-yellow-100 text-dark pt-10 pb-6">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-wrap justify-between">
+
+                    <!-- Brand -->
+                    <div class="w-full md:w-1/3 mb-6 md:mb-0">
+                        <h2 class="text-2xl font-bold mb-4">Dimsum By Ahmad</h2>
+                        <p class="text-sm text-yellow-900 leading-relaxed lg:w-1/2
+                        ">
+                            Enak, Lezat, dan Murah! Kami menyediakan dimsum terbaik dengan bahan segar dan rasa otentik
+                            khas rumahan.
+                        </p>
+                    </div>
+
+                    <!-- Navigation -->
+                    <div class="w-full md:w-1/3 mb-6 md:mb-0">
+                        <h3 class="text-lg font-semibold mb-4">Navigasi</h3>
+                        <ul>
+                            <li><a href="#home" class="text-dark hover:text-primary text-sm block mb-2">Beranda</a>
+                            </li>
+                            <li><a href="#tentang" class="text-dark hover:text-primary text-sm block mb-2">Tentang
+                                    Kami</a></li>
+                            <li><a href="#menu" class="text-dark hover:text-primary text-sm block mb-2">Menu</a>
+                            </li>
+                            <li><a href="#testimoni"
+                                    class="text-dark hover:text-primary text-sm block mb-2">Testimoni</a></li>
+                            <li><a href="#kontak" class="text-dark hover:text-primary text-sm block">Kontak</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="w-full md:w-1/3">
+                        <h3 class="text-lg font-semibold mb-4">Kontak</h3>
+                        <p class="text-sm text-dark mb-2">WhatsApp: <a href="https://wa.me/6281249344162"
+                                class="text-dark hover:text-primary">+62 812-4934-4162</a></p>
+                        <p class="text-sm text-dark">Lokasi: Surabaya, Kediri</p>
+                    </div>
+
+                </div>
+
+                <!-- Divider -->
+                <div class="border-t border-yellow-700 my-6"></div>
+
+                <!-- Copyright -->
+                <p class="text-center text-sm text-dark">
+                    &copy; 2025 Dimsum By Ahmad. All rights reserved.
+                </p>
+            </div>
+        </footer>
+    </section>
+    <!-- footer  -->
+    <script src="dist/js/script.js"></script>
+</body>
+
+</html>
