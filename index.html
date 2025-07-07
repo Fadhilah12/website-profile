@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dimsum by Ahmad</title>
+    <title>MY PROFILE</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,15 +15,16 @@
 
 <body>
     <!-- Header start  -->
-    <header class="bg-transparent absolute top-0 left-0 w-full flex
-     items-center z-10">
+    <header id="navbar"
+        class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10 transition-all duration-300">
         <div class="container">
             <div class="flex items-center justify-between relative">
-                <div class="px-4">
-                    <a href="#home" class="font-bold text-lg text-primary block py-6 lg:text-2xl">
-                        Dimsum By Ahmad
+                <div class=" px-4">
+                    <a href="#home" class="font-bold text-lg text-white block py-6 lg:text-2xl">
+                        My Profile
                     </a>
                 </div>
+
                 <div class="flex items-center px-4">
                     <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
                         <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
@@ -31,29 +32,30 @@
                         <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
                     </button>
 
+
                     <nav id="nav-menu"
-                        class="hidden absolute py-5 bg-white
+                        class="hidden absolute py-5 bg-blue-900
                     shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
                         <ul class="block lg:flex">
                             <li class="group">
-                                <a href="#home" class="text-base text-dark py-2 mx-8 flex
-                                group-hover:text-primary">Beranda</a>
+                                <a href="#home" class=" text-base text-white py-2 mx-8 flex
+                                group-hover:text-blue-500">Beranda</a>
                             </li>
                             <li class="group">
-                                <a href="#menu" class="text-base text-dark py-2 mx-8 flex
-                                group-hover:text-primary">Menu</a>
+                                <a href="#tentang saya" class=" text-base text-white py-2 mx-8 flex
+                                group-hover:text-blue-500">Tentang Saya</a>
                             </li>
                             <li class="group">
-                                <a href="#tentang kami" class="text-base text-dark py-2 mx-8 flex
-                                group-hover:text-primary">Tentang Kami</a>
+                                <a href="#pendidikan" class=" text-base text-white py-2 mx-8 flex
+                                group-hover:text-blue-500">Pendidikan</a>
                             </li>
                             <li class="group">
-                                <a href="#testimoni" class="text-base text-dark py-2 mx-8 flex
-                                group-hover:text-primary">Testimoni</a>
+                                <a href="#pengalaman" class=" text-base text-white py-2 mx-8 flex
+                                group-hover:text-blue-500">Pengalaman</a>
                             </li>
                             <li class="group">
-                                <a href="#kontak" class="text-base text-dark py-2 mx-8 flex
-                                group-hover:text-primary">Kontak</a>
+                                <a href="#kontak" class=" text-base text-white py-2 mx-8 flex
+                                group-hover:text-blue-500">Kontak</a>
                             </li>
                         </ul>
                     </nav>
@@ -62,300 +64,414 @@
         </div>
     </header>
     <!-- header end  -->
-    <!-- Hero Section Start -->
-    <section id="home"
-        class="pt-24 min-h-screen flex items-center bg-gradient-to-r from-yellow-100 to-yellow-50 text-gray-800">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-wrap items-center">
-                <div class="w-full self-center lg:w-1/2 text-center lg:text-left">
-                    <p class="text-lg font-semibold text-yellow-600 mb-2"> Dimsum by Ahmad
-                    </p>
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-orange-900 mb-4">
-                        Gurihnya Dimsum Ayam: Pasti Bikin Balik Lagi.
-                    </h1>
-                    <p class="font-medium text-gray-800 mb-10 leading-relaxed max-w-xl mx-auto lg:mx-0">
-                        Dibuat dari daging ayam segar pilihan dan bumbu yang pas, siap jadi hidangan favorit keluarga
-                        Anda.
-                    </p>
-                    <a href="https://wa.me/6281249344162" class="text-base font-semibold text-white bg-yellow-500 py-3 px-8 rounded-full
-                        hover:shadow-lg hover:bg-yellow-600 transition duration-300 ease-in-out">
-                        Pesan Sekarang
-                    </a>
+    <!-- Hero Section (Home) -->
+    <section id="home" class="relative bg-blue-900 text-white min-h-screen flex items-center overflow-hidden">
+        <div
+            class="container mx-auto px-4 flex flex-col-reverse lg:flex-row items-center justify-between gap-10 py-16 relative z-10">
+            <!-- Left Content -->
+            <div class="w-full lg:w-1/2 text-center lg:text-left">
+                <h3 class="text-lg font-semibold uppercase mb-2">Ahmad Andrean Syah Kusnuris</h3>
+                <h1 class="text-3xl md:text-4xl font-bold mb-4 leading-tight">Mengubah Ide Menjadi Proyek Digital yang
+                    Terkoordinasi.</h1>
+                <p class="text-base md:text-lg mb-6">Mahasiswa Sistem Informasi dengan keahlian manajerial dalam
+                    pengembangan aplikasi dan optimasi web, siap mengkoordinasikan tim Anda menuju keberhasilan proyek.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                    <a href="#portofolio"
+                        class="bg-purple-500 hover:bg-purple-600 text-white font-semibold px-6 py-3 rounded-full">Lihat
+                        Portofolio Saya</a>
+                    <a href="#kontak"
+                        class="bg-white text-blue-900 font-semibold px-6 py-3 rounded-full hover:bg-gray-100">Hubungi
+                        Saya</a>
                 </div>
-                <div class="w-full self-end px-4 lg:w-1/2">
-                    <div class="relative mt-10 lg:mt-9 lg:right-0 flex justify-center">
-                        <img src="dist/img/Foto Home Dimsum.png" alt="Dimsum by Ahmad"
-                            class="max-w-full mx-auto lg:max-w-[80%]">
-                    </div>
+            </div>
+
+            <!-- Right Image -->
+            <div class="w-full lg:w-1/2 relative flex flex-col items-center justify-center">
+                <!-- Email Badge above image on large screens -->
+                <div
+                    class="hidden md:block absolute -top-10 right-10 bg-white text-blue-900 text-center rounded-xl px-4 py-3 shadow-lg">
+                    <h3 class="text-xl font-bold">Email</h3>
+                    <p class="text-sm font-medium leading-tight">syahandrean59@gmail.com</p>
+                </div>
+
+                <!-- Profile Image -->
+                <img src="/dist/img/ANDRE.jpg" alt="Ahmad Andrean Syah Kusnuris"
+                    class="relative z-10 w-[200px] h-[200px] md:w-[280px] md:h-[280px] rounded-full object-cover">
+
+                <!-- Badge Email below image on mobile -->
+                <div class="mt-6 md:hidden bg-white text-blue-900 text-center rounded-xl px-4 py-3 shadow-lg">
+                    <h3 class="text-xl font-bold">Email</h3>
+                    <p class="text-sm font-medium leading-tight">syahandrean59@gmail.com</p>
                 </div>
             </div>
         </div>
+
+        <!-- Bottom Wave Decoration -->
+        <div class="absolute bottom-0 left-0 w-full h-20 bg-white rounded-t-[50%] z-0"></div>
     </section>
     <!-- Hero Section End  -->
-    <!-- menu start  -->
-    <section id="menu" class="py-16 bg-yellow-50">
+    <!-- About Me Section -->
+    <section id="tentang saya" class="py-20 bg-white text-gray-800">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center text-yellow-900 mb-10">Menu Kami</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-                <div class="relative bg-yellow-200 rounded-2xl shadow-md text-center hover:scale-105 transition duration-300
-                            pt-24 md:pt-40 lg:pt-32 pb-6 px-4">
-                    <div class="absolute -top-16 md:-top-20 lg:-top-32 left-1/2 transform -translate-x-1/2 
-                                w-40 h-40 md:w-56 md:h-56 lg:w-64 lg:h-64 z-10">
-                        <img src="dist/img/Dimsum.png" alt="Dimsum Original" class="w-full h-full object-cover mx-auto">
-                    </div>
-
-                    <h3 class="text-xl md:text-2xl font-bold text-yellow-900 mb-1 mt-4">Dimsum Original</h3>
-                    <p class="text-md md:text-xl font-semibold text-yellow-900 mb-1">Isi 6</p>
-                    <p class="text-sm md:text-md text-yellow-800 mb-3 px-2">Saos pedas manis.</p>
-                    <p class="text-xl md:text-2xl font-bold text-yellow-900 mb-4">Rp14.000</p>
-                    <a href="https://wa.me/6281249344162"
-                        class="bg-primary text-white text-sm md:text-base font-semibold px-5 py-2.5 rounded-full hover:bg-yellow-600 transition duration-300 transform hover:scale-105">
-                        Order Sekarang
-                    </a>
-                </div>
-
-                <div class="relative bg-yellow-200 rounded-2xl shadow-md text-center hover:scale-105 transition duration-300
-                            pt-24 md:pt-40 lg:pt-32 pb-6 px-4">
-                    <div class="absolute -top-16 md:-top-20 lg:-top-32 left-1/2 transform -translate-x-1/2 
-                                w-40 h-40 md:w-56 md:h-56 lg:w-64 lg:h-64  z-10">
-                        <img src="dist/img/Dimsum.png" alt="Dimsum Mentai" class="w-full h-full object-cover mx-auto">
-                    </div>
-                    <h3 class="text-xl md:text-2xl font-bold text-yellow-900 mb-1 mt-4">Dimsum Mentai</h3>
-                    <p class="text-md md:text-xl font-semibold text-yellow-900 mb-1">Isi 6</p>
-                    <p class="text-sm md:text-md text-yellow-800 mb-3 px-2">Saos mentai tidak pedas atau mentai ekstra
-                        pedas</p>
-                    <p class="text-xl md:text-2xl font-bold text-yellow-900 mb-4">Rp16.000</p>
-                    <a href="https://wa.me/6281249344162"
-                        class="bg-primary text-white text-sm md:text-base font-semibold px-5 py-2.5 rounded-full hover:bg-yellow-800 transition duration-300 transform hover:scale-105">
-                        Order Sekarang
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- menu end  -->
-
-
-
-    <!-- best seller  -->
-    <section id="best-seller" class="py-20 bg-primary">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-col lg:flex-row items-center gap-10">
-
-                <!-- Kiri-->
-                <div class="lg:w-1/2">
-                    <img src="dist/img/Dimsum.png" alt="Dimsum Mentai"
-                        class="w-[300px] md:w-[350px] lg:w-[400px] mx-auto drop-shadow-2xl hover:scale-105 transition duration-500" />
-                </div>
-                <!-- Kanan-->
-                <div class="lg:w-1/2 text-center lg:text-left">
-                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Our Best Seller</h2>
-                    <p class="text-white text-lg leading-relaxed mb-6">
-                        Dimsum Mentai kami adalah pilihan favorit para pelanggan!
-                        Dibuat dari bahan berkualitas, disajikan dengan saus mentai spesial yang gurih dan nikmat.
-                    </p>
-                    <p class="text-white
-                     font-bold text-2xl mb-6">Rp16.000 / Isi 6 pcs</p>
-                    <a href="https://wa.me/6281249344162"
-                        class="inline-block bg-yellow-100 text-primary font-semibold px-6 py-3 rounded-full shadow hover:bg-yellow-900 hover:text-white transition">
-                        Order Sekarang
-                    </a>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- best seller end  -->
-
-
-    <!-- tentang kami Section Start -->
-    <section id="tentang kami" class="pt-36 pb-32">
-        <div class="container">
-            <div class="flex flex-wrap">
-                <div class="w-full px-4 mb-10 lg:w-1/2">
-                    <h4 class="font-bold uppercase text-primary text-lg mb-3">Tentang Kami</h4>
-                    <h2 class="font-bold text-dark text-3xl mb-5 max-w-md lg:text-3xl">Dimsum By Ahmad</h2>
-                    <p class="font-medium text-base text-Yellow-500 max-w-xl lg:text-lg">
-                        "Berawal dari kecintaan akan hidangan dimsum otentik, Dimsum By Ahmad didirikan sejak tahun 2024
-                        dengan satu misi sederhana: menyajikan dimsum ayam berkualitas tinggi yang lezat dan bisa
-                        dinikmati siapa saja. Kami percaya bahwa kelezatan sejati datang dari bahan-bahan pilihan dan
-                        proses pembuatan yang cermat.
-                        Setiap butir dimsum ayam kami diolah secara higienis menggunakan daging ayam segar premium dan
-                        bumbu rahasia keluarga yang telah teruji. Kami berkomitmen untuk mempertahankan cita rasa asli
-                        dimsum, sehingga setiap gigitan membawa Anda pada pengalaman kuliner yang autentik dan
-                        memuaskan. Dari dapur kami, untuk meja makan Anda, kami sajikan dimsum dengan sepenuh hati."
-                    </p>
-                </div>
-                <div class="w-full px-4 lg:w-1/2">
-                    <h3 class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10">Ikuti Kami</h3>
-                    <p class="font-medium text-base text-Yellow-500 mb-6 lg:text-lg"> Kepuasan pelanggan adalah
-                        prioritas
-                        utama. Kami selalu berusaha menghadirkan produk dimsum ayam terbaik dengan kualitas dan rasa
-                        yang konsisten.
-                        Kami senang bisa berbagi perjalanan kelezatan ini bersama Anda! Untuk mendapatkan update terbaru
-                        tentang menu baru, promo menarik, atau sekadar melihat di balik layar proses pembuatan dimsum
-                        kami, jangan lupa ikuti kami di media sosial</p>
-                    <div class="flex items-center">
-                        <!-- Instagram -->
-                        <a href="https://instagram.com/dimsumbyahmad" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-Yellow-300
-                         hover:border-primary hover:bg-primary hover:text-white">
-                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <title>Instagram</title>
-                                <path
-                                    d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077" />
-                            </svg>
-                        </a>
-                        <!-- WhatsApp -->
-                        <a href="https://wa.me/085649290574" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-Yellow-300
-                         hover:border-primary hover:bg-primary hover:text-white">
-                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <title>WhatsApp</title>
-                                <path
-                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-    <!-- About Section End  -->
-
-    <!-- testimoni start  -->
-    <section id="testimoni" class="bg-primary py-16">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-white text-center mb-10">Apa Kata Mereka?</h2>
-
-            <div class="relative overflow-hidden">
-                <div id="testimonial-slider" class="flex transition-transform duration-500 ease-in-out">
-
-                    <!-- Slide 1 -->
-                    <div class="w-full lg:w-1/3 flex-shrink-0 px-2">
-                        <div class="bg-yellow-100 rounded-lg p-6 text-center shadow-md h-full">
-                            <p class="text-lg italic mb-4">“Enak banget, dagingnya ayamnya kerasa banget dan saos
-                                mentainya enakk banget”</p>
-                            <h5 class="font-bold">– Nana</h5>
-                        </div>
-                    </div>
-                    <!-- Slide 2 -->
-                    <div class="w-full lg:w-1/3 flex-shrink-0 px-2">
-                        <div class="bg-yellow-100 rounded-lg p-6 text-center shadow-md h-full">
-                            <p class="text-lg italic mb-4">“Makin enakk dan nagih, bakalan sering order sih”</p>
-                            <h5 class="font-bold">– Arda</h5>
-                        </div>
-                    </div>
-                    <!-- Slide 3 -->
-                    <div class="w-full lg:w-1/3 flex-shrink-0 px-2">
-                        <div class="bg-yellow-100 rounded-lg p-6 text-center shadow-md h-full">
-                            <p class="text-lg italic mb-4">“ENAKKK BANGETT, mau pesen lagi"
-                            </p>
-                            <h5 class="font-bold">– Okta</h5>
-                        </div>
-                    </div>
-                    <!-- Slide 4 -->
-                    <div class="w-full lg:w-1/3 flex-shrink-0 px-2">
-                        <div class="bg-yellow-100 rounded-lg p-6 text-center shadow-md h-full">
-                            <p class="text-lg italic mb-4">“Mentainya banyak, dimusmnya ga asin, jadi menyatu sama
-                                mentainya love lovvv"
-                            </p>
-                            <h5 class="font-bold">– Zuwina</h5>
-                        </div>
-                    </div>
-                    <!-- Slide 5 -->
-                    <div class="w-full lg:w-1/3 flex-shrink-0 px-2">
-                        <div class="bg-yellow-100 rounded-lg p-6 text-center shadow-md h-full">
-                            <p class="text-lg italic mb-4">“Saos mentainya enak banget, mau order lagi"
-                            </p>
-                            <h5 class="font-bold">– Nadia</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Navigation Buttons -->
-            <div class="flex justify-center mt-6 gap-4">
-                <button onclick="moveSlide(-1)"
-                    class="bg-white hover:bg-yellow-300 text-yellow-800 font-bold py-2 px-4 rounded-full shadow">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <g fill="none" fill-rule="evenodd">
-                            <path
-                                d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
-                            <path fill="currentColor"
-                                d="M7.94 13.06a1.5 1.5 0 0 1 0-2.12l5.656-5.658a1.5 1.5 0 1 1 2.121 2.122L11.122 12l4.596 4.596a1.5 1.5 0 1 1-2.12 2.122l-5.66-5.658Z" />
-                        </g>
-                    </svg>
-                </button>
-                <button onclick="moveSlide(1)"
-                    class="bg-white hover:bg-yellow-300 text-yellow-800 font-bold py-2 px-4 rounded-full shadow">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <g fill="none" fill-rule="evenodd">
-                            <path
-                                d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
-                            <path fill="currentColor"
-                                d="M16.06 10.94a1.5 1.5 0 0 1 0 2.12l-5.656 5.658a1.5 1.5 0 1 1-2.121-2.122L12.879 12L8.283 7.404a1.5 1.5 0 0 1 2.12-2.122l5.658 5.657Z" />
-                        </g>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        </div>
-    </section>
-    <!-- testimoni end  -->
-    <!-- footer  -->
-    <section>
-        <footer class="bg-yellow-100 text-dark pt-10 pb-6">
-            <div class="container mx-auto px-4">
-                <div class="flex flex-wrap justify-between">
-
-                    <!-- Brand -->
-                    <div class="w-full md:w-1/3 mb-6 md:mb-0">
-                        <h2 class="text-2xl font-bold mb-4">Dimsum By Ahmad</h2>
-                        <p class="text-sm text-yellow-900 leading-relaxed lg:w-1/2
-                        ">
-                            Enak, Lezat, dan Murah! Kami menyediakan dimsum terbaik dengan bahan segar dan rasa otentik
-                            khas rumahan.
-                        </p>
-                    </div>
-
-                    <!-- Navigation -->
-                    <div class="w-full md:w-1/3 mb-6 md:mb-0">
-                        <h3 class="text-lg font-semibold mb-4">Navigasi</h3>
-                        <ul>
-                            <li><a href="#home" class="text-dark hover:text-primary text-sm block mb-2">Beranda</a>
-                            </li>
-                            <li><a href="#tentang" class="text-dark hover:text-primary text-sm block mb-2">Tentang
-                                    Kami</a></li>
-                            <li><a href="#menu" class="text-dark hover:text-primary text-sm block mb-2">Menu</a>
-                            </li>
-                            <li><a href="#testimoni"
-                                    class="text-dark hover:text-primary text-sm block mb-2">Testimoni</a></li>
-                            <li><a href="#kontak" class="text-dark hover:text-primary text-sm block">Kontak</a></li>
-                        </ul>
-                    </div>
-
-                    <!-- Contact Info -->
-                    <div class="w-full md:w-1/3">
-                        <h3 class="text-lg font-semibold mb-4">Kontak</h3>
-                        <p class="text-sm text-dark mb-2">WhatsApp: <a href="https://wa.me/6281249344162"
-                                class="text-dark hover:text-primary">+62 812-4934-4162</a></p>
-                        <p class="text-sm text-dark">Lokasi: Surabaya, Kediri</p>
-                    </div>
-
-                </div>
-
-                <!-- Divider -->
-                <div class="border-t border-yellow-700 my-6"></div>
-
-                <!-- Copyright -->
-                <p class="text-center text-sm text-dark">
-                    &copy; 2025 Dimsum By Ahmad. All rights reserved.
+            <h2 class="text-3xl font-bold mb-6 text-center">Tentang Saya</h2>
+            <div class="max-w-4xl mx-auto text-justify">
+                <p class="mb-4">
+                    Saya Ahmad Andrean Syah Kusnuris, seorang mahasiswa semester 7 jurusan Sistem Informasi di Telkom
+                    University Surabaya. Dengan latar belakang pendidikan yang kuat dalam rekayasa perangkat lunak dan
+                    interaksi manusia-komputer, saya memiliki passion besar dalam mengelola dan mengkoordinasikan
+                    proyek-proyek digital.
+                </p>
+                <p class="mb-4">
+                    Saya berpengalaman sebagai Project Manager dan Scrum Master di beberapa proyek akademik utama,
+                    termasuk pengembangan aplikasi mobile, di mana saya berhasil memimpin tim lintas fungsi untuk
+                    mencapai tujuan proyek tepat waktu. Selain itu, pengalaman magang saya di bidang SEO dan optimasi
+                    web telah memperkaya pemahaman saya tentang perencanaan strategis dan pengelolaan sumber daya dalam
+                    konteks digital.
+                </p>
+                <p>
+                    Saya memiliki keahlian dalam perencanaan, pengaturan prioritas, dan pengelolaan waktu menggunakan
+                    alat seperti Trello dan Jira. Saya juga menguasai metodologi pengembangan seperti SDLC, Scrum, dan
+                    Agile, memastikan setiap proyek berjalan lancar dan efisien. Dengan kemampuan komunikasi dan
+                    kolaborasi yang baik, saya selalu berusaha menjadi jembatan antara ide dan realisasi, membawa solusi
+                    inovatif ke dalam setiap tantangan proyek.
                 </p>
             </div>
-        </footer>
+        </div>
     </section>
+    <!-- Portfolio Section -->
+    <section id="portofolio" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-4 text-center">Pengalaman Saya</h2>
+            <p class="text-center mb-10 max-w-3xl mx-auto">Proyek dan pengalaman yang menampilkan keahlian saya dalam
+                manajemen proyek, pengembangan aplikasi, dan optimasi web.</p>
+
+            <div class="space-y-8 max-w-4xl mx-auto">
+                <!-- Proyek 1 -->
+                <div class="flex flex-col lg:flex-row lg:items-start gap-4">
+                    <div class="lg:w-1/4 text-sm text-blue-900 font-semibold bg-gray-100 rounded-full px-4 py-2 w-fit">
+                        2022 - 2024</div>
+                    <div class="lg:w-3/4">
+                        <h3 class="text-xl font-bold mb-1">Pengembangan Aplikasi Mobile PETCARE</h3>
+                        <p class="text-sm italic mb-2">Akademik Project Manager & Scrum Master | Telkom University
+                            Surabaya</p>
+                        <p class="text-gray-700 mb-2">
+                            Memimpin tim lintas fungsi (front-end, back-end, UI/UX) dalam pengembangan aplikasi mobile
+                            PETCARE pada mata kuliah Pengembangan Aplikasi Bergerak. Berhasil menerapkan metode SCRUM
+                            untuk perencanaan sprint dan manajemen backlog, meningkatkan efisiensi tim dan memastikan
+                            proyek selesai tepat waktu.
+                        </p>
+                        <p class="text-sm text-purple-700 font-semibold">Keahlian: Manajemen Proyek, Scrum, Agile,
+                            Koordinasi Tim, Pengembangan Aplikasi Mobile</p>
+                    </div>
+                </div>
+
+                <!-- Proyek 2 -->
+                <div class="flex flex-col lg:flex-row lg:items-start gap-4">
+                    <div class="lg:w-1/4 text-sm text-blue-900 font-semibold bg-gray-100 rounded-full px-4 py-2 w-fit">
+                        2024</div>
+                    <div class="lg:w-3/4">
+                        <h3 class="text-xl font-bold mb-1">Optimasi Web & Desain UI/UX</h3>
+                        <p class="text-sm italic mb-2">Magang UI/UX Designer | PT Our Digital Creative, Surabaya</p>
+                        <p class="text-gray-700 mb-2">
+                            Mengelola proyek-proyek optimasi website dengan mitra seperti RagaSports dan berperan aktif
+                            dalam perencanaan serta pelaksanaan strategi SEO. Bertanggung jawab dalam memastikan
+                            koordinasi lintas tim untuk mencapai target perusahaan. Melakukan optimasi desain UI website
+                            profil perusahaan (OurWeb) dan mengelola konten serta penulisan artikel SEO untuk berbagai
+                            proyek website.
+                        </p>
+                        <p class="text-sm text-purple-700 font-semibold">Keahlian: Optimasi Website, SEO, Desain UI/UX,
+                            Design Thinking, Manajemen Proyek, Konten Website</p>
+                    </div>
+                </div>
+
+                <!-- Proyek 3 -->
+                <div class="flex flex-col lg:flex-row lg:items-start gap-4">
+                    <div class="lg:w-1/4 text-sm text-blue-900 font-semibold bg-gray-100 rounded-full px-4 py-2 w-fit">
+                        2025</div>
+                    <div class="lg:w-3/4">
+                        <h3 class="text-xl font-bold mb-1">Analisis Sentimen Boikot Produk Pro-Israel pada Aplikasi X
+                        </h3>
+                        <p class="text-sm italic mb-2">Proyek Skripsi</p>
+                        <p class="text-gray-700 mb-2">
+                            Proyek skripsi yang bertujuan mengidentifikasi persepsi masyarakat terhadap kampanye boikot
+                            melalui ulasan/komentar di aplikasi X. Melibatkan pengumpulan data (scraping), preprocessing
+                            (tokenisasi, stopword removal, stemming) menggunakan Python, klasifikasi Naive Bayes, dan
+                            visualisasi hasil di Looker Studio.
+                        </p>
+                        <p class="text-sm text-purple-700 font-semibold">Keahlian: Python, Machine Learning, Naive
+                            Bayes, Web Scraping, Visualisasi Data, Looker Studio</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Education & Skills Section -->
+    <section id="pendidikan" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row gap-10">
+                <!-- Education Column -->
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl font-bold mb-10">Pendidikan</h2>
+                    <div class="space-y-10 relative border-l-4 border-blue-500 pl-6">
+                        <!-- Telkom University -->
+                        <div class="relative">
+                            <div class="absolute -left-4 top-0 w-3 h-3 bg-blue-500 rounded-full"></div>
+                            <p class="text-sm text-gray-500">2021 - 2025</p>
+                            <h3 class="text-lg font-bold">Telkom University Surabaya</h3>
+                            <p class="text-sm text-gray-700">Sistem Informasi</p>
+                        </div>
+
+                        <!-- SMA Negeri 1 Sumenep -->
+                        <div class="relative">
+                            <div class="absolute -left-4 top-0 w-3 h-3 bg-blue-500 rounded-full"></div>
+                            <p class="text-sm text-gray-500">2018 - 2021</p>
+                            <h3 class="text-lg font-bold">SMA NEGERI 1 SUMENEP</h3>
+                            <p class="text-sm text-gray-700">MIPA</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skills Column -->
+                <div class="lg:w-[50%]">
+                    <h2 class="text-3xl font-bold mb-10">Keahlian Saya</h2>
+                    <div class="space-y-6">
+                        <div>
+                            <p class="text-sm font-semibold text-gray-700 mb-1">Manajemen Proyek & Perencanaan Strategis
+                            </p>
+                            <div class="w-full bg-gray-200 rounded-full h-4">
+                                <div class="bg-blue-600 h-4 rounded-full" style="width: 91.6%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-sm font-semibold text-gray-700 mb-1">Metodologi Pengembangan (SDLC, Agile,
+                                Scrum)</p>
+                            <div class="w-full bg-gray-200 rounded-full h-4">
+                                <div class="bg-blue-600 h-4 rounded-full" style="width: 83.3%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-sm font-semibold text-gray-700 mb-1">Kepemimpinan & Penyelesaian Masalah</p>
+                            <div class="w-full bg-gray-200 rounded-full h-4">
+                                <div class="bg-blue-600 h-4 rounded-full" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-sm font-semibold text-gray-700 mb-1">Pengembangan Aplikasi Mobile</p>
+                            <div class="w-full bg-gray-200 rounded-full h-4">
+                                <div class="bg-blue-600 h-4 rounded-full" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-sm font-semibold text-gray-700 mb-1">Optimasi Web & SEO</p>
+                            <div class="w-full bg-gray-200 rounded-full h-4">
+                                <div class="bg-blue-600 h-4 rounded-full" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-sm font-semibold text-gray-700 mb-1">Desain UI/UX & Design Thinking</p>
+                            <div class="w-full bg-gray-200 rounded-full h-4">
+                                <div class="bg-blue-600 h-4 rounded-full" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-sm font-semibold text-gray-700 mb-1">Analisis Data & Machine Learning</p>
+                            <div class="w-full bg-gray-200 rounded-full h-4">
+                                <div class="bg-blue-600 h-4 rounded-full" style="width: 66.6%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-sm font-semibold text-gray-700 mb-1">Komunikasi & Kolaborasi</p>
+                            <div class="w-full bg-gray-200 rounded-full h-4">
+                                <div class="bg-blue-600 h-4 rounded-full" style="width: 95%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Experience & Certification Section -->
+    <section id="pengalaman" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row gap-10">
+                <!-- Experience Column -->
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl font-bold mb-10">Organisasi</h2>
+                    <div class="space-y-10 relative border-l-4 border-blue-500 pl-6">
+                        <!-- UKM -->
+                        <div class="relative">
+                            <div class="absolute -left-4 top-0 w-3 h-3 bg-blue-500 rounded-full"></div>
+                            <p class="text-sm text-gray-500">2021 - 2022</p>
+                            <h3 class="text-lg font-bold">UKM Cycology</h3>
+                            <p class="text-sm text-gray-700">Anggota Aktif</p>
+                        </div>
+                        <div class="relative">
+                            <div class="absolute -left-4 top-0 w-3 h-3 bg-blue-500 rounded-full"></div>
+                            <p class="text-sm text-gray-500">2022-2023</p>
+                            <h3 class="text-lg font-bold">UKM ECITTS (Entrepreneur Community)</h3>
+                            <p class="text-sm text-gray-700">Anggota Divisi Human Resource</p>
+                        </div>
+                        <div class="relative">
+                            <div class="absolute -left-4 top-0 w-3 h-3 bg-blue-500 rounded-full"></div>
+                            <p class="text-sm text-gray-500">2022-2024</p>
+                            <h3 class="text-lg font-bold">UKM UKKI AL-HABSY</h3>
+                            <p class="text-sm text-gray-700">Anggota Aktif</p>
+                        </div>
+                        <div class="relative">
+                            <div class="absolute -left-4 top-0 w-3 h-3 bg-blue-500 rounded-full"></div>
+                            <p class="text-sm text-gray-500">2023</p>
+                            <h3 class="text-lg font-bold">Himpunan Mahasiswa Sistem Informasi</h3>
+                            <p class="text-sm text-gray-700">Staff Magang Departemen Kewirausahaan</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certification Column -->
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl font-bold mb-10">Sertifikasi</h2>
+                    <div class="space-y-10 relative border-l-4 border-blue-500 pl-6">
+                        <div class="relative">
+                            <div class="absolute -left-4 top-0 w-3 h-3 bg-blue-500 rounded-full"></div>
+                            <p class="text-sm text-gray-500">2024</p>
+                            <h3 class="text-lg font-bold">SAP HR05 Certification (edugate)</h3>
+                            <p class="text-sm text-gray-700">Modul HR05</p>
+                        </div>
+                        <div class="relative">
+                            <div class="absolute -left-4 top-0 w-3 h-3 bg-blue-500 rounded-full"></div>
+                            <p class="text-sm text-gray-500">2024</p>
+                            <h3 class="text-lg font-bold">Asisten Praktikum Mata Kuliah PSDP (Pengembangan Sumber Daya
+                                Perusahaan)</h3>
+                            <p class="text-sm text-gray-700">Modul HR05</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="kontak" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-blue-900 mb-8">Hubungi Saya</h2>
+            <p class="text-center text-gray-700 mb-10 max-w-2xl mx-auto">
+                Tertarik untuk berkolaborasi atau memiliki proyek yang perlu dikelola? Jangan ragu untuk menghubungi
+                saya!
+            </p>
+            <div class="flex flex-col lg:flex-row gap-12">
+                <!-- Contact Form -->
+                <div class="lg:w-1/2">
+                    <form class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Nama</label>
+                            <input type="text" placeholder="Nama Anda"
+                                class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Email</label>
+                            <input type="email" placeholder="Email Anda"
+                                class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Pesan</label>
+                            <textarea rows="4" placeholder="Tulis pesan Anda"
+                                class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"></textarea>
+                        </div>
+                        <button type="submit"
+                            class="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition">
+                            Kirim Pesan
+                        </button>
+                    </form>
+                </div>
+                <!-- Contact Info -->
+                <div class="lg:w-1/2 space-y-6">
+                    <div>
+                        <h3 class="text-xl font-semibold text-blue-900 mb-2">Email</h3>
+                        <p class="text-gray-700">syahandrean59@gmail.com</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-blue-900 mb-2">Media Sosial</h3>
+                        <div class="flex items-center">
+                            <!-- Github -->
+                            <a href="https://github.com/andreanara" target="_blank" class="w-9 h-9 mr-3 rounded-full  text-blue-500 flex justify-center items-center border border-blue-300
+                         hover:border-blue-500 hover:bg-blue-500 hover:text-white">
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <title>GitHub</title>
+                                    <path
+                                        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                                </svg>
+                            </a>
+                            <!-- Instagram -->
+                            <a href="https://instagram.com/ahm_andrean" target="_blank" class="w-9 h-9 mr-3 rounded-full  text-blue-500 flex justify-center items-center border border-blue-300
+                         hover:border-blue-500 hover:bg-blue-500 hover:text-white">
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <title>Instagram</title>
+                                    <path
+                                        d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077" />
+                                </svg>
+                            </a>
+                            <!-- WhatsApp -->
+                            <a href="https://wa.me/+6282337889725" target="_blank" class="w-9 h-9 mr-3 text-blue-500 rounded-full flex justify-center items-center border border-blue-300
+                         hover:border-blue-500 hover:bg-blue-500 hover:text-white">
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <title>WhatsApp</title>
+                                    <path
+                                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer  -->
+    <!-- Footer Section -->
+    <footer class="bg-blue-900 text-white py-10">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between gap-10">
+                <!-- About -->
+                <div class="md:w-1/4">
+                    <h2 class="text-xl font-bold mb-4">Tentang Saya</h2>
+                    <p class="text-sm text-gray-300 mb-4">Mahasiswa Sistem Informasi yang berfokus pada manajemen proyek
+                        digital, desain UI/UX, dan optimasi web.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-blue-400"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="hover:text-blue-400"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="hover:text-blue-400"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <!-- Useful Links -->
+                <div class="md:w-1/4">
+                    <h2 class="text-xl font-bold mb-4">Tautan Penting</h2>
+                    <ul class="text-sm space-y-2 text-gray-300">
+                        <li><a href="#tentang saya" class="hover:text-white">Tentang Saya</a></li>
+                        <li><a href="#pendidikan" class="hover:text-white">Pendidikan</a></li>
+                        <li><a href="#pengalaman" class="hover:text-white">Pengalaman</a></li>
+                        <li><a href="#kontak" class="hover:text-white">Kontak</a></li>
+                    </ul>
+                </div>
+                <!-- What I Do -->
+                <div class="md:w-1/4">
+                    <h2 class="text-xl font-bold mb-4">Layanan Saya</h2>
+                    <ul class="text-sm space-y-2 text-gray-300">
+                        <li>Manajemen Proyek</li>
+                        <li>Desain UI/UX</li>
+                        <li>Optimasi Web & SEO</li>
+                        <li>Analisis Data</li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="text-center text-sm text-gray-400 mt-10">
+                &copy; 2025 Ahmad Andrean. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
     <!-- footer  -->
     <script src="dist/js/script.js"></script>
 </body>
